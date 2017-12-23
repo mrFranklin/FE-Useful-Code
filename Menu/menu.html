@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        ul {
+            width: 520px;
+            height: 50px;
+            background-color: #f65f57;
+            font: bold 0/50px Arial;
+            box-shadow: 0 5px #b64b41;
+            padding: 4px 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        ul li {
+            position: relative;
+            display: inline-block;
+            font-size: 13px;
+            padding: 0 16px;
+            list-style: none outside none;
+            text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        ul li {
+            background: linear-gradient(to bottom, #dd2926, #a82724, #dd2926) no-repeat right / 1px 15px;
+        }
+
+        ul li:last-child {
+            background: none;
+        }
+
+        /* ul li:after {
+        content: ' ';
+        display: inline-block;
+        position: absolute;
+          top: 18px;
+          right: 0px;
+          width: 1px;
+          height: 13px;
+          background-color: #dd2926;
+        } */
+
+        ul li:last-child:after {
+            background: none;
+        }
+
+        ul a,
+        ul a:hover {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* 动画效果 */
+        ul a {
+            display: inline-block; /*  a标签默认是inline，transition不起作用 transition: all 0.2 s ease-in; */
+        }
+        ul a:hover {
+            transform: rotate(10deg);
+        }
+
+
+    </style>
+</head>
+<body>
+<ul>
+    <li><a href="">Home</a></li>
+    <li><a href="">About Me</a></li>
+    <li><a href="">Portfolio</a></li>
+    <li><a href="">Blog</a></li>
+    <li><a href="">Resources</a></li>
+    <li><a href="">Contact Me</a></li>
+</ul>
+</body>
+</html>
